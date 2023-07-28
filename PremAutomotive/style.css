@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-color: black;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+
+#hero p{
+    color: #FFFDD0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 80px;
+    background: #000000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#hero button a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFDD0;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF4500;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: white;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo{
+    height: 4.5vw;
+}
+
+#hero{
+    background-image: url("img/index/3.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+    color: #FF4500;
+}
+
+#hero h2{
+    color: #FF7F50;
+}
+#hero h1{
+    color: #FFFDD0;
+}
+
+#hero button{
+    background-image: url("img/button/k.png");
+    background-color: transparent;
+    color: #FFFDD0;
+    border: 0;
+    padding: 14px 80px 14px 80px;
+    background-repeat: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    border: transparent;
+}
+
+#feature{
+    background-color:#000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    background-color: aliceblue;
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 10px;
+    margin: 15px 0;
+    transition: 0.3s ease;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+    border-radius: 25px;
+}
+
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: #FFFDD0;
+    display: inline-block;
+}
+
+#products{
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    
+}
+.pro{
+    background-color: aliceblue;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 7px;
+    margin: 15px 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.pro:hover{
+    background-color: #FFFDD0;
+    border-radius: 20px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+}
+
+.pd{
+    height: 20vh;
+}
+
+.ban{
+    background-image: url("img/banner/b2.jpg");
+    padding: 40px;
+    width: 100%;
+    background-size: cover;
+}
+.fb{
+    /* background-color: rgba(255, 253, 208, 0.9); */
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    font-weight: 700;
+}
+#products .ban button{
+    padding: 10px 15px;
+    background-color: aliceblue ;
+    font-weight: 700;
+    color: #000000;
+    border:0;
+}
+
+#products .ban button:hover{
+    background-color: #FFFDD0;
+}
+
+#products .pro .des h4{
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+    padding: 5px 0px 10px 0px;
+}
+
+#products .pro .des {
+    text-align: left;
+}
+
+.kk:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#products .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+
+#products .pro .cart:hover{
+    background-color: #FFFFFF;
+}
+.banner{
+    width: 100%;
+}
+
+#foot {
+    background-image: url("img/banner/b1.jpg");
+    display: flex;
+}
+#foot p{
+    color: #FF4500;
+}
+
+#foot a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+#foot .co{
+    padding: 10px 40px;
+}
+
+.checked {
+    color: orange;
+}
+
+#card1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+#card1 .bo{
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    background-image: url(img/1.jpg);
+    box-sizing: border-box;
+    background-size: contain;
+    box-sizing: border-box;
+    color: rgb(201, 233, 67);
+    cursor: pointer;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    background-image: url(img/1.jpg);
+    font-size: 20px;
+    border: 3px solid #000000;
+    transition: 0.5s all ease-in-out;
+    -webkit-filter: brightness(100%);
+}
+
+#card1 .bo .griditem h4{
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+#card1 .bo .griditem figcaption{
+    box-sizing: border-box;
+    color: rgb(201, 233, 67);
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+#card1 .bo .griditem figcaption:hover{
+    background-color: rgb(201, 233, 67);
+    -webkit-filter: brightness(100%);
+}
+
+#card1 .bo .griditem h4{
+    padding: 5px 10px;
+    z-index: 999;
+}
+#card1 .griditem:hover{
+    transform: scale(1.02);
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+#card1 .bo .p1 button{
+    background-color: #088178;
+    padding: 4px 7px;
+    align-items: center;
+    border: 0px;
+}
+

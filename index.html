@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/prem/1.jpg" type="image/x-icon">
 </head>
+
 <body>
     <section id="header">
         <div class="burger" onclick="myFunction()">
@@ -25,19 +27,19 @@
             <li><a href="accessories.html">ACCESSORIES</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
             <!-- <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li> -->
-            
+
         </div>
-        <div class="cart">
-            <i class="fa fa-shopping-cart fa-2x"></i>
+        <div class="cart" onclick="cartopen()">
+            <i class="fa fa-shopping-cart fa-2x topcart"></i>
             <div class="number-of-items"><span class="noi">0</span></div>
         </div>
     </section>
 
     <section id="hero">
-        <h4 >mega-offer-products</h4>
-        <h2 >Super value deals</h2>
-        <h1 >On all products</h1>
-        <p >Save more with coupons & up to 70% off!</p>
+        <h4>mega-offer-products</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
         <button><a href="helmets.html">Shop Now</a></button>
     </section>
 
@@ -73,7 +75,7 @@
             <h2 class="fb">Featured Products</h2>
             <button>Explore More</button>
         </div>
-        
+
         <div class="container">
             <div class="pro">
                 <img src="img/products/CHE.png" class="pd" alt="">
@@ -87,9 +89,9 @@
                         <i class="fa fa-star checked"></i>
                         <i class="fa fa-star checked"></i>
                     </div>
-                    <h4>₹4500</h4>
+                    <h4>4500</h4>
                 </div>
-                <a href="cart.html"><i class="fa fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart" onclick="cartopen()"><i class="fa fa-shopping-cart cart"></i></button>
             </div>
 
             <div class="pro">
@@ -104,9 +106,9 @@
                         <i class="fa fa-star checked"></i>
                         <i class="fa fa-star checked"></i>
                     </div>
-                    <h4>₹11750</h4>
+                    <h4>11750</h4>
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart" onclick="cartopen()"><i class="fa fa-shopping-cart cart"></i></button>
             </div>
 
             <div class="pro">
@@ -121,9 +123,9 @@
                         <i class="fa fa-star checked"></i>
                         <i class="fa fa-star checked"></i>
                     </div>
-                    <h4>₹6600</h4>
+                    <h4>6600</h4>
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart" onclick="cartopen()"><i class="fa fa-shopping-cart cart"></i></button>
             </div>
 
             <div class="pro">
@@ -138,9 +140,9 @@
                         <i class="fa fa-star checked"></i>
                         <i class="fa fa-star checked"></i>
                     </div>
-                    <h4>₹4500</h4>
+                    <h4>4500</h4>
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart" onclick="cartopen()"><i class="fa fa-shopping-cart cart"></i></button>
             </div>
 
             <div class="pro">
@@ -155,34 +157,32 @@
                         <i class="fa fa-star checked"></i>
                         <i class="fa fa-star checked"></i>
                     </div>
-                    <h4>₹11,750</h4>
+                    <h4>11750</h4>
                 </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart" onclick="cartopen()"><i class="fa fa-shopping-cart cart"></i></button>
             </div>
         </div>
         <div class="cart-sidebar">
             <div class="cartt">
-                <span class="close-cart">
+                <span class="close-cart" onclick="cartclose()">
                     <i class="fa fa-times"></i>
                 </span>
                 <h2>Your Cart</h2>
                 <div class="cart-content"></div>
             </div>
-                <div class="total-sum">
-                    <h1>Your Total: $ <span class="total-amount">0</span></h1>
-                </div>
-                <div class="clear-cart">
-                    <button class="btn clear-cart btn">Clear Cart</button>
-                </div>
-                <div class="clear-cart">
-                    <button class="btn clear-cart-btn">Proceed</button>
-                </div>
+            <ul class="cart-items">
+                <!-- Cart items go here -->
+            </ul>
+            <div class="total-sum">
+                <h3>Your Total: ₹ <span class="cart-total">0</span></h3>
             </div>
-        
+            <div class="clear-cart">
+                <button class="btn clear-cart clearcart" onclick="clearcart()">Clear Cart</button>
+                <button class="btn clear-cart checkout">Proceed</button>
+            </div>
+        </div>
+
         <div class="menu-sidebar">
-            <!-- <div class="close-menu">
-                <i class="fa fa-times"></i>
-            </div> -->
             <div class="menu-menubar">
                 <ul class="menu-list">
                     <li class="menu-list-items" onclick="myFunction()"><i class="fa fa-times "></i></li>
@@ -209,8 +209,9 @@
             <a href="shop.html">Refund/Exchange Policy</a><br>
             <a href="shop.html">Accessories</a><br>
         </div>
-        
+
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
